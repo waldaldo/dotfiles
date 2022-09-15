@@ -1,0 +1,1 @@
+/home/walo/.config/i3
