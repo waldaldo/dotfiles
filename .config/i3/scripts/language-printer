@@ -1,0 +1,17 @@
+#!/bin/bash
+
+CURR_LANG="$(setxkbmap -print | grep xkb_symbols | awk '{print $4}' | awk -F"+" '{print $2}')"
+INTL="us(intl)"
+LATAM="latam"
+
+if [ $CURR_LANG == $INTL ] ; then
+	echo "US"
+elif [ $CURR_LANG == $LATAM ] ; then
+	echo "LA"
+else
+	echo "US"
+fi
+
+if [[ $BLOCK_BUTTON -eq 1 ]]; then
+	sh $HOME/.config/i3/scripts/language
+fi

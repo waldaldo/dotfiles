@@ -1,0 +1,114 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 1,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 338,
+       "width": 582,
+       "x": 0,
+       "y": 0
+    },
+    "name": "i3-save-tree --workspace 1 > ws1.json",
+    "percent": 0.5,
+    "swallows": [
+       {
+       // "class": "^Termite$",
+       // "instance": "^termite$",
+       // "title": "^i3\\-save\\-tree\\ \\-\\-workspace\\ 1\\ \\>\\ ws1\\.json$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    // splitv split container with 2 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 338,
+               "width": 582,
+               "x": 0,
+               "y": 0
+            },
+            "name": "walo@non-serviam: ~",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Termite$",
+               "instance": "^termite$",
+               "title": "^walo\\@non\\-serviam\\:\\ \\~$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 1,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 338,
+               "width": 582,
+               "x": 0,
+               "y": 0
+            },
+            "name": "gotop",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Termite$",
+               "instance": "^termite$",
+               "title": "^gotop$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "rect": {
+       "height": 2642,
+       "width": 4656,
+       "x": 2610,
+       "y": 3076
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "user_on",
+            "geometry": {
+               "height": 243,
+               "width": 339,
+               "x": 1571,
+               "y": 807
+            },
+            "name": "Redshift GUI",
+            "percent": 1,
+            "swallows": [
+               {
+               "class": "^Redshiftgui\\.elf$",
+               "instance": "^redshiftgui\\.elf$",
+               "title": "^Redshift\\ GUI$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

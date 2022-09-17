@@ -1,0 +1,63 @@
+conky.config = {
+	alignment 		= 'top_right',
+	background 		= true,
+	color1 			= '100c08',
+	color2 			= '984141',
+	color3			= 'ffbf00',
+	cpu_avg_samples 	= 4,
+	default_color 		= 'e6ffff',
+	double_buffer 		= true,
+	font 			= 'Telefonica-Regular:size=8',
+	draw_shades 		= false,
+	gap_x 			= 20,
+	gap_y 			= 40,
+	minimum_width 		= 200,
+	maximum_width 		= 200,
+	no_buffers 		= true,
+	own_window 		= true,
+        own_window_class        = 'Conky',
+	own_window_type 	= 'override',
+	own_window_transparent 	= true,
+	update_interval 	= 1.0,
+	use_xft 		= true,
+}
+conky.text = [[
+${voffset 8}$color3${font Telefonica-Regular:size=16}${time %A}$font\
+${voffset -8}$alignr$color3${font Zecton:size=38}${time %e}$font
+$color${voffset -30}$color3${font Zecton:size=18}${time %b}$font\
+${voffset -3} $color3${font Zecton:size=20}${time %Y}$font$color3$hr
+#
+${voffset 10}${goto 20}${font Telefonica-Regular:size=10:bold}${color}CPU${font Bitstream Vera Sans:bold:size=9}$alignr$cpu%
+${voffset 5}${goto 20}$font$color${top name 1}$alignr$color${top cpu 1}%
+${goto 20}$color${top name 2}$alignr$color${top cpu 2}%
+${goto 20}$color${top name 3}$alignr$color${top cpu 3}%
+${goto 20}$color${top name 4}$alignr$color${top cpu 4}%
+${goto 20}$color${top name 5}$alignr$color${top cpu 5}%
+#
+${voffset 10}${goto 20}${font Telefonica-Regular:size=10:bold}${color}RAM${font Telefonica:bold:size=9}$alignr$mem$font
+${goto 20}${voffset 5}$color${top_mem name 1}$alignr$color${top_mem mem_res 1}
+${goto 20}$color${top_mem name 2}$alignr$color${top_mem mem_res 2}
+${goto 20}$color${top_mem name 3}$alignr$color${top_mem mem_res 3}
+${goto 20}$color${top_mem name 4}$alignr$color${top_mem mem_res 4}
+${goto 20}$color${top_mem name 5}$alignr$color${top_mem mem_res 5}
+#
+${voffset 10}${goto 20}${font Ubuntu:size=10:bold}${color}Swap${font Telefonica:bold:size=8}$alignr${swap}/ ${swapfree}
+
+${voffset -5}$color$font$alignr${execi 10000 awk -F= '/TION/ {print $2}' /etc/lsb-release |sed 's/"//g'} \
+${execi 10000 awk -F= '/EASE=/ {printf $2" "} /NAME/ {print $2}' /etc/lsb-release}
+${voffset 10}${color}${alignr}${execi 1200 whoami}@${nodename}
+${alignr}${color}${font Bitstream Vera Sans:size=8}uptime: ${color}${uptime_short}
+${voffset 5}${color}${font Ubuntu:size=8}${alignr}kernel: ${color}${kernel}
+${voffset -5}$color3$hr
+
+${voffset 0}${goto 50}$color3${font Consolas:size=30}$alignc${time %H:%M}${font Telefonica:size=10} $color1${time %P}${color3}${time %S}
+#${voffset 0}${goto 50}$color3${font Consolas:size=30}$alignc${time -u}
+
+${voffset -5}$color3$hr
+
+${goto 15}${color dddddd}${font Consolas:regular:size=11}${execpi 90 DC=`date +%_d`; cal | sed s/"\(^\|[^0-9]\)$DC"'\b'/'\1${color orange}'"$DC"'$color'/ }
+${voffset -5}$color3$hr
+${color CC9900}Cripto Tracker (USD)$color
+${font Ubuntu:regular:size=10}
+${execpi 60 python /home/walo/.config/i3/scripts/bitcoin.py}
+]]
