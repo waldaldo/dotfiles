@@ -296,7 +296,7 @@ bindsym $mod+Ctrl+q workspace $WS2; exec qutebrowser
 #       Call file manager
 bindsym $mod+F2 workspace $WS3; exec nemo
 #       Call text edit
-bindsym $mod+Shift+S workspace $WS4; exec subl
+bindsym $mod+Shift+S workspace $WS4; exec flameshot gui
 #       Call multimedia
 bindsym $mod+F4 workspace $WS5; exec spicetify update restart
 #       Call chat
@@ -473,7 +473,6 @@ for_window [class="silos-twitch"] floating enable ##autofloat## silos-twitch
 for_window [class="Org.gnome.Nautilus"] floating enable ##autofloat## Org.gnome.Nautilus
 for_window [class="Steam"] floating enable ##autofloat## Steam
 for_window [class="firefox"] floating enable ##autofloat## firefox
-for_window [class="qBittorrent"] floating enable ##autofloat## qBittorrent
 for_window [class="Mailspring"] floating enable ##autofloat## Mailspring
 for_window [class="Master PDF Editor 5"] floating enable ##autofloat## Master PDF Editor 5
 for_window [class="qv4l2"] floating enable ##autofloat## qv4l2
@@ -505,7 +504,6 @@ for_window [class="gdm-settings"] floating enable ##autofloat## gdm-settings
 for_window [class="Epdfview"] floating enable ##autofloat## Epdfview
 for_window [class="Blueberry.py"] floating enable ##autofloat## Blueberry.py
 for_window [class="Zathura"] floating enable ##autofloat## Zathura
-for_window [class="grw.exe"] floating enable ##autofloat## grw.exe
 for_window [class="whatsapp-nativefier-d40211"] floating enable ##autofloat## whatsapp-nativefier-d40211
 for_window [class="feh"] floating enable ##autofloat## feh
 for_window [class="discord"] floating enable ##autofloat## discord
@@ -516,3 +514,8 @@ for_window [class="Google-chrome"] floating enable ##autofloat## Google-chrome
 for_window [class="Code"] floating enable ##autofloat## Code
 for_window [class="Main.py"] floating enable ##autofloat## Main.py
 for_window [class="Whalebird"] floating enable ##autofloat## Whalebird
+for_window [class="Notesnook"] floating enable ##autofloat## Notesnook
+for_window [class="qBittorrent"] floating enable ##autofloat## qBittorrent
+for_window [class="kitty"] floating enable ##autofloat## kitty
+for_window [class="tefor.exe"] floating enable ##autofloat## tefor.exe
+for_window [class="quicksfv.exe"] floating enable ##autofloat## quicksfv.exe
