@@ -11,8 +11,8 @@ exec --no-startup-id $HOME/.config/i3/scripts/wallpaper ~/Imágenes/wide
 # workspace_layout tabbed <stacking|tabbed>
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-default_border none
-default_floating_border normal
+default_border pixel 0
+default_floating_border pixel 0
 
 # Hide borders
 hide_edge_borders yes
@@ -217,7 +217,7 @@ for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="Xfburn"] floating enable
+for_window [class="qutebrowser"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -483,7 +483,6 @@ for_window [class="TradingView"] floating enable ##autofloat## TradingView
 for_window [class="Nemo"] floating enable ##autofloat## Nemo
 for_window [class="vlc"] floating enable ##autofloat## vlc
 for_window [class="libreoffice-impress"] floating enable ##autofloat## libreoffice-impress
-for_window [class="qutebrowser"] floating enable ##autofloat## qutebrowser
 for_window [class="TelegramDesktop"] floating enable ##autofloat## TelegramDesktop
 for_window [class="sengi"] floating enable ##autofloat## sengi
 for_window [class="Gnome-boxes"] floating enable ##autofloat## Gnome-boxes
@@ -510,12 +509,17 @@ for_window [class="discord"] floating enable ##autofloat## discord
 for_window [class="SubDownloader"] floating enable ##autofloat## SubDownloader
 for_window [class="silos-primevideo"] floating enable ##autofloat## silos-primevideo
 for_window [class="notion-app-enhanced"] floating enable ##autofloat## notion-app-enhanced
-for_window [class="Google-chrome"] floating enable ##autofloat## Google-chrome
 for_window [class="Code"] floating enable ##autofloat## Code
 for_window [class="Main.py"] floating enable ##autofloat## Main.py
 for_window [class="Whalebird"] floating enable ##autofloat## Whalebird
 for_window [class="Notesnook"] floating enable ##autofloat## Notesnook
 for_window [class="qBittorrent"] floating enable ##autofloat## qBittorrent
-for_window [class="kitty"] floating enable ##autofloat## kitty
 for_window [class="tefor.exe"] floating enable ##autofloat## tefor.exe
 for_window [class="quicksfv.exe"] floating enable ##autofloat## quicksfv.exe
+for_window [class="stacer"] floating enable ##autofloat## stacer
+for_window [class="silos-netflix"] floating enable ##autofloat## silos-netflix
+for_window [class="Xreader"] floating enable ##autofloat## Xreader
+for_window [class="cyberpunk2077.exe"] floating enable ##autofloat## cyberpunk2077.exe
+for_window [class="YouTube Music"] floating enable ##autofloat## YouTube Music
+for_window [class="qutebrowser"] floating enable ##autofloat## qutebrowser
+for_window [class="Google-chrome"] floating enable ##autofloat## Google-chrome

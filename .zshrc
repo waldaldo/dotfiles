@@ -116,3 +116,4 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 alias reconky="killall conky; ~/.config/i3/conky/conky.sh"
 alias fans='nbfc config --apply "Acer Nitro 5"'
 alias savecfg='/usr/bin/git --git-dir=/home/walo/.cfg/ --work-tree=/home/walo'
+alias yaycleaner='yay -Scc'
